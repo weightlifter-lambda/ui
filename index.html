@@ -39,7 +39,7 @@
      
     <a href="#">Home</a>
     <a href="#">About Us</a>
-    <a href="# ">Contact</a>
+    <a href="#form ">Contact</a>
     
    </div>
    
@@ -72,13 +72,13 @@
       <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
       <a href="#">Home</a>
       <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="#form">Contact</a>
   </div>
   <!-- JS FOR WIDTH OF SIDE MENU WHEN OPENS AND CLOSES -->
   <script>
       function openSlideMenu() {
-          document.getElementById('side-menu').style.width = '200px';
-          document.getElementById('showcase').style.marginLeft = '200px';
+          document.getElementById('side-menu').style.width = '175px';
+          document.getElementById('showcase').style.marginLeft = '175px';
       }
       function closeSlideMenu() {
           document.getElementById('side-menu').style.width = '0';
@@ -96,6 +96,7 @@
                 <h2>Build Habits</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi adipisci nisi. Hic, iusto molestiae rem laboriosam explicabo accusamus aliquid? Fugit modi voluptatem dolorem doloremque nostrum hic placeat saepe ex!
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda ipsam ut iusto maiores aut est vitae animi impedit doloremque officia, sapiente iste? Repudiandae similique tenetur ut. Ex, libero laborum!
+                  
               </p>
               <div class="btn" >
                 <button id="one">Sign Up</button> 
@@ -121,6 +122,7 @@
             <h2>See Results</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi adipisci nisi. Hic, iusto molestiae rem laboriosam explicabo accusamus aliquid? Fugit modi voluptatem dolorem doloremque nostrum hic placeat saepe ex!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda ipsam ut iusto maiores aut est vitae animi impedit doloremque officia, sapiente iste? Repudiandae similique tenetur ut. Ex, libero laborum!
+                
             </p>
             <div class="btn">
               <button>Sign Up</button> 
@@ -130,16 +132,43 @@
        </div>
         </section>
         
-    </section>
+      </section>
 
-   
+      <div class="container" id="form">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <!-- <p>Swing by for a cup of coffee, or leave us a message:</p> -->
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="imgs/unattended-dumbbell.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
   
    
 
     
 
     <footer>
-      <p>Copyright WorkoutLOG 2020</p>
+      <p>@Copyright WorkOut Log 2020</p>
     </footer>
 
   </div>
