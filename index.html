@@ -1,0 +1,176 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkoutLog</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+ <!-- navigation code here -->
+ 
+
+
+
+  <nav>
+    
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#FBB338" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#FBB338" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#FBB338" stroke-width="5" />
+          </svg>
+      </a>
+  </span>
+    <div class="links">
+
+      <h1>Workout Log</h1>
+        
+     
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#form ">Contact</a>
+    
+   </div>
+   
+
+  </nav>
+
+  
+
+  
+
+
+
+
+  <div class="container home">
+
+    <header class="intro">
+        
+
+       <!-- image code here -->
+       <!-- <div class="intro-img">
+        
+        <img src="imgs/man-carrying-barbel-791763.jpg" alt="">
+      </div> -->
+      
+    
+     
+    </header>
+
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#form">Contact</a>
+  </div>
+  <!-- JS FOR WIDTH OF SIDE MENU WHEN OPENS AND CLOSES -->
+  <script>
+      function openSlideMenu() {
+          document.getElementById('side-menu').style.width = '175px';
+          document.getElementById('showcase').style.marginLeft = '175px';
+      }
+      function closeSlideMenu() {
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('showcase').style.marginLeft = '0';
+      }
+  </script>
+
+    
+
+    <section class="features">
+        <section class="workout-imgs">
+            
+            <div>
+                <img src="imgs/healthy-woman-legs-dark-136404.jpg" class="legpress"alt="legpress">
+                <h2>Build Habits</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi adipisci nisi. Hic, iusto molestiae rem laboriosam explicabo accusamus aliquid? Fugit modi voluptatem dolorem doloremque nostrum hic placeat saepe ex!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda ipsam ut iusto maiores aut est vitae animi impedit doloremque officia, sapiente iste? Repudiandae similique tenetur ut. Ex, libero laborum!
+                  
+              </p>
+              <div class="btn" >
+                <button id="one">Sign Up</button> 
+               </div>
+            </div>
+            
+        
+        <div>
+            
+            <img src="imgs/woman-lifting-two-dumbells-on-both-hands-in-front-of-mirror-1886487.jpg" class="mirror" alt="girl in mirror">
+            <h2>Track Progress</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi adipisci nisi. Hic, iusto molestiae rem laboriosam explicabo accusamus aliquid? Fugit modi voluptatem dolorem doloremque nostrum hic placeat saepe ex!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda ipsam ut iusto maiores aut est vitae animi impedit doloremque officia, sapiente iste? Repudiandae similique tenetur ut. Ex, libero laborum!
+            </p>
+            <div class="btn" >
+              <button id="two">Sign Up</button> 
+             </div>
+        </div>
+       
+        <div>
+
+            <img src="imgs/man-holding-barbell-1431282.jpg"  alt="Squat">
+            <h2>See Results</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi adipisci nisi. Hic, iusto molestiae rem laboriosam explicabo accusamus aliquid? Fugit modi voluptatem dolorem doloremque nostrum hic placeat saepe ex!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda ipsam ut iusto maiores aut est vitae animi impedit doloremque officia, sapiente iste? Repudiandae similique tenetur ut. Ex, libero laborum!
+                
+            </p>
+            <div class="btn">
+              <button>Sign Up</button> 
+             </div>
+        </div>
+        
+       </div>
+        </section>
+        
+      </section>
+
+      <div class="container" id="form">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <!-- <p>Swing by for a cup of coffee, or leave us a message:</p> -->
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="imgs/unattended-dumbbell.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+  
+   
+
+    
+
+    <footer>
+      <p>@Copyright WorkOut Log 2020</p>
+    </footer>
+
+  </div>
+</body>
+</html>

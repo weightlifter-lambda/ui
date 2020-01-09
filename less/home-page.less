@@ -1,0 +1,128 @@
+.home {
+    @media @phone{
+      // display: flex;
+      // flex-direction: column;
+      .display();
+      
+    }
+  .intro {
+
+    background-image: url('../imgs/man-carrying-barbel-791763.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    @media @phone{
+      // display: flex;
+      // flex-direction: column;
+      .display();
+      // width: 500px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h2 {
+      padding: 15px;
+      color:#FBB338;
+    }
+
+    p {
+      padding:0 15px;
+    }
+
+    
+   
+    
+  
+  }
+
+  
+
+.features{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    // div{
+    //     margin: 5%;
+    //     justify-content: ;
+    // }
+}
+.workout-imgs {
+    display: flex;
+    // flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+
+    @media @phone{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div{
+        justify-content: center;
+        margin: 2%;
+        
+         .btn {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+
+      :hover{
+        background-color: #06a8ff;
+    }
+
+     
+          
+      button{
+        color:#FBB338;
+  background-color: #22283A;
+  padding: 2%;
+  width: 50%;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+
+
+          @media @phone{
+            width: 100%;
+            font-size: 2rem;
+            padding: 3%;
+          }
+
+          #one {
+            @media @phone{
+              display:hidden;
+            }
+        }
+      }
+      
+    }
+     
+    }
+
+
+
+    img {
+      width: 85%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 50%;
+
+    
+
+      @media @phone {
+        width: 90%;
+      }
+      
+  
+    }
+
+   
+
+}
+}

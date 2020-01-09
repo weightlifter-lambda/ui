@@ -1,0 +1,400 @@
+.display {
+  display: flex;
+  flex-direction: column;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+  color: #FBB338;
+  margin-bottom: 1%;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav .links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+nav .links :hover {
+  background-color: #06a8ff;
+}
+nav .links h1 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-left: 3%;
+  color: #FBB338;
+  flex-direction: row;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  nav .links h1 {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 2%;
+    font-size: 6rem;
+  }
+}
+nav .links a {
+  font-size: 1.7rem;
+  margin: 1% 2% 1% 2%;
+  font-weight: bold;
+  color: #FBB338;
+  text-decoration: none;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  nav .links a {
+    display: none;
+  }
+}
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.8s;
+}
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.8s;
+}
+.side-nav a:hover {
+  color: #FBB338;
+  background-color: #06A8FF;
+}
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .navbar-nav {
+    display: none;
+  }
+}
+@media (min-width: 501px) {
+  .open-slide {
+    display: none;
+  }
+}
+footer {
+  color: #FBB338;
+  background: black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .intro {
+  background-image: url('../imgs/man-carrying-barbel-791763.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+  color: #FBB338;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.home .workout-imgs {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .home .workout-imgs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.home .workout-imgs div {
+  justify-content: center;
+  margin: 2%;
+}
+.home .workout-imgs div .btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.home .workout-imgs div .btn :hover {
+  background-color: #06a8ff;
+}
+.home .workout-imgs div .btn button {
+  color: #FBB338;
+  background-color: #22283A;
+  padding: 2%;
+  width: 50%;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .home .workout-imgs div .btn button {
+    width: 100%;
+    font-size: 2rem;
+    padding: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .home .workout-imgs div .btn button #one {
+    display: hidden;
+  }
+}
+.home .workout-imgs img {
+  width: 85%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 50%;
+}
+@media (max-width: 500px) {
+  .home .workout-imgs img {
+    width: 90%;
+  }
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #22283A;
+  color: #FBB338;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+input[type=submit]:hover {
+  background-color: #06a8ff;
+}
+/* Style the container/contact section */
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  font-size: 1.7rem;
+  color: #FBB338;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
