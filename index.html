@@ -17,18 +17,41 @@
 <body>
 
  <!-- navigation code here -->
- <nav>
+ 
+
+
+
+  <nav>
     
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#FBB338" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#FBB338" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#FBB338" stroke-width="5" />
+          </svg>
+      </a>
+  </span>
+    <div class="links">
+
+      <h1>Workout Log</h1>
+        
+     
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="# ">Contact</a>
+    
+   </div>
    
-   <div class="links">
-       <!-- <img src="imgs/LogoMakr_7qpXUg.png" alt=""> -->
-    <h1>Workout Log</h1>
-   <a>Home</a>
-   <a>About Us</a>
-   <a>Contact</a>
-   
-  </div>
- </nav>
+
+  </nav>
+
+  
+
+  
+
+
+
 
   <div class="container home">
 
@@ -45,6 +68,26 @@
      
     </header>
 
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+  </div>
+  <!-- JS FOR WIDTH OF SIDE MENU WHEN OPENS AND CLOSES -->
+  <script>
+      function openSlideMenu() {
+          document.getElementById('side-menu').style.width = '200px';
+          document.getElementById('showcase').style.marginLeft = '200px';
+      }
+      function closeSlideMenu() {
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('showcase').style.marginLeft = '0';
+      }
+  </script>
+
+    
+
     <section class="features">
         <section class="workout-imgs">
             
@@ -54,6 +97,9 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi adipisci nisi. Hic, iusto molestiae rem laboriosam explicabo accusamus aliquid? Fugit modi voluptatem dolorem doloremque nostrum hic placeat saepe ex!
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda ipsam ut iusto maiores aut est vitae animi impedit doloremque officia, sapiente iste? Repudiandae similique tenetur ut. Ex, libero laborum!
               </p>
+              <div class="btn" >
+                <button id="one">Sign Up</button> 
+               </div>
             </div>
             
         
@@ -64,6 +110,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi adipisci nisi. Hic, iusto molestiae rem laboriosam explicabo accusamus aliquid? Fugit modi voluptatem dolorem doloremque nostrum hic placeat saepe ex!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda ipsam ut iusto maiores aut est vitae animi impedit doloremque officia, sapiente iste? Repudiandae similique tenetur ut. Ex, libero laborum!
             </p>
+            <div class="btn" >
+              <button id="two">Sign Up</button> 
+             </div>
         </div>
        
         <div>
@@ -73,16 +122,21 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi adipisci nisi. Hic, iusto molestiae rem laboriosam explicabo accusamus aliquid? Fugit modi voluptatem dolorem doloremque nostrum hic placeat saepe ex!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda ipsam ut iusto maiores aut est vitae animi impedit doloremque officia, sapiente iste? Repudiandae similique tenetur ut. Ex, libero laborum!
             </p>
+            <div class="btn">
+              <button>Sign Up</button> 
+             </div>
         </div>
-    
+        
+       </div>
         </section>
+        
     </section>
 
    
   
    
 
-    </section>
+    
 
     <footer>
       <p>Copyright WorkoutLOG 2020</p>

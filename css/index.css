@@ -163,25 +163,89 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav h1 {
-  text-align: left;
-  font-size: 3rem;
-  margin-bottom: 1%;
-  margin-top: 1%;
-  margin-left: 3%;
-  color: #FBB338;
-}
 nav .links {
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: row;
 }
+nav .links h1 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-left: 3%;
+  color: #FBB338;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  nav .links h1 {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 2%;
+    font-size: 6rem;
+  }
+}
 nav .links a {
   font-size: 1.7rem;
   margin: 1% 2% 1% 2%;
   font-weight: bold;
   color: #FBB338;
+}
+@media (max-width: 500px) {
+  nav .links a {
+    display: none;
+  }
+}
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.8s;
+}
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.8s;
+}
+.side-nav a:hover {
+  color: #FBB338;
+  background-color: #06A8FF;
+}
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .navbar-nav {
+    display: none;
+  }
+}
+@media (min-width: 501px) {
+  .open-slide {
+    display: none;
+  }
 }
 footer {
   color: #FBB338;
@@ -243,6 +307,31 @@ footer {
 .home .workout-imgs div {
   justify-content: center;
   margin: 2%;
+}
+.home .workout-imgs div .btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.home .workout-imgs div .btn button {
+  color: #FBB338;
+  background-color: #22283A;
+  padding: 2%;
+  width: 50%;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .home .workout-imgs div .btn button {
+    width: 100%;
+    font-size: 2rem;
+    padding: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .home .workout-imgs div .btn button #one {
+    display: hidden;
+  }
 }
 .home .workout-imgs img {
   width: 85%;
